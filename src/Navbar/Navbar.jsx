@@ -4,8 +4,7 @@ import './Navbar.css';
 const navbar = () => {
   return (
     <div className='navbar'>  
-    {/* potrzeba logo */}
-      <img src='/logo192.png' alt="Logo" className='logo' />
+    {/* <img src="/wjlog.png" alt="Logo" className="logo" /> */}
       <ul className='nav-menu'>
         <li>Home</li>
         <li>About Me</li>
