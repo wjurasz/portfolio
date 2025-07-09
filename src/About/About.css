@@ -63,12 +63,13 @@
     font-weight: 500;
 }
 
-.about-skills hr{
-    outline: none;
+.about-skill hr{
+    outline: white;
     border: none;
     width: 50%;
     height: 8px;
     border-radius: 50px;
+    background: linear-gradient(220deg, #00aeff 10%, #ffffff 90%);
 }
 
 @media(max-width:768px){

@@ -34,17 +34,20 @@ const Contact = () => {
         </div>
         <div className="contact-section">
             <div className="contact-left">
-                <h1>Contact with Me</h1>
+                <h1>Contact Me!</h1>
                 <p>Wojciech Jurasz </p>
                 <div className="contact-details">
                     <div className="contact-detail">
+                    <img src="/Icons/envelope.svg" alt="Email" />
                     <p>juraszwojtek03@gmail.com</p></div>
                 </div>
                 <div className="contact-details">
                     <div className="contact-detail">
+                    <img src="/Icons/linkedin.svg" alt="Email" />
                     <p>https://www.linkedin.com/in/wojciech-jurasz/</p></div>
                 </div>
                 <div className="contact-details">
+                    <img src="/Icons/github.svg" alt="Email" />
                     <div className="contact-detail">
                     <p>https://github.com/wjurasz</p></div>
                 </div>
@@ -55,7 +58,7 @@ const Contact = () => {
                 </div>
             </div>
             <form onSubmit={onSubmit} className="contact-right">
-                <div className="contact-right-info">Leave a message</div>
+                <div className="contact-right-info">Leave a message!</div>
                 <label htmlFor=''>Your Name</label>
                 <input type='text' placeholder='Enter Your name' name='name'></input>
                 <label htmlFor='Your Email'></label>

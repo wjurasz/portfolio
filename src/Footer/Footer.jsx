@@ -16,8 +16,8 @@ const Footer = () => {
         <div className="footer-bottom">
             <p className="footer-bootom-left">© 2025 Wojciech Jurasz</p>
             <div className="footer-bottom-right">
-                <p>LinkedIn</p>
-                <p>GitHub</p>
+                <p><a href='https://github.com/wjurasz' target='_blank' rel='noopener noreferrer' className='footer-link'>GitHub</a></p>
+                <p><a href='https://www.linkedin.com/in/wojciech-jurasz/' target='_blank' rel='noopener noreferrer' className='footer-link'>LinkedIn</a></p>
             </div>
         </div>
     </div>
