@@ -1,15 +1,17 @@
 import React from 'react'
 import './Hero.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Hero = () => {
   return (
-    <div className='hero'> 
+    <div id='home' className='hero'> 
     {/* profile img */}
     {/* <img src='/logo512.png' alt="Logo" className='hero-logo' /> */}
     <h1><span>Hi I am Wojciech Jurasz!</span></h1>
-    <p>I'am back-end developer, and computer science student in Rzeszów, Poland.</p>
+    <p>I am software developer, and Computer Science student in Rzeszów, Poland.</p>
+    <p>I work in <span>.NET</span>, <span>React</span>, <span>Python</span>.</p>
     <div className='hero-action'>
-        <div className='hero-connect'>Connect with Me</div>
+        <div className='hero-connect'><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with Me</AnchorLink></div>
         <div className="hero-resume">My resume</div>
     </div>
     </div>

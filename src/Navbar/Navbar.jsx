@@ -3,15 +3,16 @@ import './Navbar.css';
 
 const navbar = () => {
   return (
-    <div className='navbar'>  
+    <div id='navbar' className='navbar'>  
+    
     {/* <img src="/wjlog.png" alt="Logo" className="logo" /> */}
       <ul className='nav-menu'>
-        <li>Home</li>
+        {/* <li>Home</li>
         <li>About Me</li>
         <li>Portfolio</li>
-        <li>Contact</li>
+        <li>Contact</li> */}
       </ul>
-      <div className='nav-connect'>Connect with Me</div>
+      {/* <div className='nav-connect'>Connect with Me</div> */}
     </div>
   );
 };
