@@ -4,6 +4,7 @@ import Hero from './Hero/Hero.jsx';
 import About from './About/About.jsx';
 import Contact from './Contact/Contact.jsx';
 import Footer from './Footer/Footer.jsx';
+import DynamicTile from './DynamicTile/DynamicTile.jsx';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
+      <DynamicTile />
     </div>
   );
 }

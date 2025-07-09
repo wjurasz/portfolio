@@ -9,6 +9,10 @@
 
 .about-title{
     position: relative;
+    background: linear-gradient(140deg, #ff0080 15%, #883ed1 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
 }
 
