@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-details">
                     <div className="contact-detail">
-                    <img src="/Icons/linkedin.svg" alt="Email" />
+                    {/* <img src="/Icons/LinkedIn_icon.svg.webp" alt="Email" /> */}
                     <p>https://www.linkedin.com/in/wojciech-jurasz/</p></div>
                 </div>
                 <div className="contact-details">
