@@ -43,10 +43,12 @@
 
 .hero-connect{
     padding: 25px;
+    width: 180px;
     border-radius: 50px;
     background: linear-gradient(267deg, #ff0080, #7928ca);
     cursor: pointer;
     transition: 0.5s;
+    text-align: center;
 }
 
 .hero-resume{

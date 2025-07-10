@@ -27,7 +27,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <div className="about-achievements">
+        {/* <div className="about-achievements">
             <div className="about-achievement">
                 <h1>1</h1>
                 <p>cos</p>
@@ -42,7 +42,7 @@ const About = () => {
                 <h1>1</h1>
                 <p>coś</p>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

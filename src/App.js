@@ -5,6 +5,7 @@ import About from './About/About.jsx';
 import Contact from './Contact/Contact.jsx';
 import Footer from './Footer/Footer.jsx';
 import DynamicTile from './DynamicTile/DynamicTile.jsx';
+import Expirence from './Expirence/Expirence.jsx';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Expirence />
       <Contact />
       <Footer />
       <DynamicTile />
