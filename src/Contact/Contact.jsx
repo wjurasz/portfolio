@@ -35,26 +35,26 @@ const Contact = () => {
         <div className="contact-section">
             <div className="contact-left">
                 <h1>Contact Me!</h1>
-                <p>Wojciech Jurasz </p>
+                <p className='imie'> </p>
                 <div className="contact-details">
                     <div className="contact-detail">
-                    <img src="/Icons/envelope.svg" alt="Email" />
+                    <img src="/Icons/gmail.png" className='icons'/>
                     <p>juraszwojtek03@gmail.com</p></div>
                 </div>
                 <div className="contact-details">
                     <div className="contact-detail">
-                    {/* <img src="/Icons/LinkedIn_icon.svg.webp" alt="Email" /> */}
+                    <img src="/Icons/LinkedIn_icon.svg.webp" className='icons'></img>
                     <p>https://www.linkedin.com/in/wojciech-jurasz/</p></div>
                 </div>
-                <div className="contact-details">
-                    {/* <img src="/Icons/github.svg" alt="Email" /> */}
+                {/* <div className="contact-details">
+                    <img src='/Icons/git.jpg' className='icons'></img>
                     <div className="contact-detail">
                     <p>https://github.com/wjurasz</p></div>
-                </div>
+                </div> */}
                 <div className="contact-details">
-                    <div className="contact-detail">
+                    {/* <div className="contact-detail">
                         <p>Rzeszów, Poland</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <form onSubmit={onSubmit} className="contact-right">

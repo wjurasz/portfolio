@@ -12,7 +12,7 @@ const Expirence = () => {
                 <p>Intern back-end developer working in .NET</p>
                 <p>07.2025 - Present</p>
                 <hr />
-                {/* <img></img> */}
+                <img src='/Icons/techtop.svg'></img>
                 <h1>Techtop Łukasz Mazur</h1>
                 <p>Computer service technician</p>
                 <p>06.2024 - 09.2024</p>
@@ -20,7 +20,7 @@ const Expirence = () => {
                 <img src='/Icons/arivi.png'></img>
                 <h1>ARIVI sp.z o.o.</h1>
                 <p>Intern software developer working in Java</p>
-                <p>07.2023 - Present</p>
+                <p>07.2023 - 09.2023</p>
                 <hr />
             </div>
             <div className='edu'>
