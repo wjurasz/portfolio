@@ -39,7 +39,7 @@ const About = () => {
             </div>
             <hr />
             <div className="about-achievement">
-                <h1>1</h1>
+                <h1>x1</h1>
                 <p>coś</p>
             </div>
         </div>
