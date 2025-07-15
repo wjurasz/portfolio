@@ -3,7 +3,7 @@ import "./Contact.css"
 
 const Contact = () => {
 
-    const onSubmit = async (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
@@ -26,48 +26,59 @@ const Contact = () => {
     }
   };
 
-
   return (
     <div id='contact' className='contact'>
-        <div className='contact-title'>
-            <h1>Get in touch!</h1>
-        </div>
-        <div className="contact-section">
-            <div className="contact-left">
-                <h1>Contact Me!</h1>
-                <p className='imie'> </p>
-                <div className="contact-details">
-                    <div className="contact-detail">
-                    <img src="/Icons/gmail.png" className='icons'/>
-                    <p>juraszwojtek03@gmail.com</p></div>
-                </div>
-                <div className="contact-details">
-                    <div className="contact-detail">
-                    <img src="/Icons/LinkedIn_icon.svg.webp" className='icons'></img>
-                    <p>https://www.linkedin.com/in/wojciech-jurasz/</p></div>
-                </div>
-                {/* <div className="contact-details">
-                    <img src='/Icons/git.jpg' className='icons'></img>
-                    <div className="contact-detail">
-                    <p>https://github.com/wjurasz</p></div>
-                </div> */}
-                <div className="contact-details">
-                    {/* <div className="contact-detail">
-                        <p>Rzeszów, Poland</p>
-                    </div> */}
-                </div>
+      <div className='contact-title'>
+        <h1>Get in touch!</h1>
+      </div>
+      <div className="contact-section">
+        <div className="contact-left">
+          <h1>Contact Me!</h1>
+          <p className='imie'> </p>
+          <div className="contact-details">
+            <div className="contact-detail">
+              <img src="/Icons/gmail.png" className='icons' />
+              <p>juraszwojtek03@gmail.com</p>
             </div>
-            <form onSubmit={onSubmit} className="contact-right">
-                <div className="contact-right-info">Leave a message!</div>
-                <label htmlFor=''>Your Name</label>
-                <input type='text' placeholder='Enter Your name' name='name'></input>
-                <label htmlFor='Your Email'></label>
-                <input type='email' placeholder='Enter Your email' name='email'></input>
-                <label htmlFor=''>Write Your message here!</label>
-                <textarea name='message' rows='8' placeholder='Enter Your message'></textarea>
-                <button type='submit' className="contact-submit">Submit</button>
-            </form>
+          </div>
+          <div className="contact-details">
+            <div className="contact-detail">
+              <img src="/Icons/LinkedIn_icon.svg.webp" className='icons' />
+              <p>
+                <a 
+                  href="https://www.linkedin.com/in/wojciech-jurasz/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className='contact-link'
+                >
+                  https://www.linkedin.com/in/wojciech-jurasz/
+                </a>
+              </p>
+            </div>
+          </div>
+          {/* <div className="contact-details">
+            <img src='/Icons/git.jpg' className='icons'></img>
+            <div className="contact-detail">
+              <p>https://github.com/wjurasz</p>
+            </div>
+          </div> */}
+          <div className="contact-details">
+            {/* <div className="contact-detail">
+              <p>Rzeszów, Poland</p>
+            </div> */}
+          </div>
         </div>
+        <form onSubmit={onSubmit} className="contact-right">
+          <div className="contact-right-info">Leave a message!</div>
+          <label htmlFor=''>Your Name</label>
+          <input type='text' placeholder='Enter Your name' name='name' />
+          <label htmlFor='Your Email'></label>
+          <input type='email' placeholder='Enter Your email' name='email' />
+          <label htmlFor=''>Write Your message here!</label>
+          <textarea name='message' rows='8' placeholder='Enter Your message'></textarea>
+          <button type='submit' className="contact-submit">Submit</button>
+        </form>
+      </div>
     </div>
   )
 }
