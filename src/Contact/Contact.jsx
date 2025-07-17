@@ -23,7 +23,7 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      toast.success("✅ " + res.message);
+      toast.success(" " + res.message);
       event.target.reset(); // czyści formularz po wysłaniu
     } else {
       toast.error("❌ Something went wrong. Please try again.");
