@@ -1,5 +1,6 @@
-import React from 'react'
-import "./Contact.css"
+import React from 'react';
+import "./Contact.css";
+import { toast } from 'react-toastify';
 
 const Contact = () => {
 
@@ -22,7 +23,10 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert(res.message)
+      toast.success("✅ " + res.message);
+      event.target.reset(); // czyści formularz po wysłaniu
+    } else {
+      toast.error("❌ Something went wrong. Please try again.");
     }
   };
 
@@ -34,16 +38,15 @@ const Contact = () => {
       <div className="contact-section">
         <div className="contact-left">
           <h1>Contact Me!</h1>
-          <p className='imie'> </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src="/Icons/gmail.png" className='icons' />
+              <img src="/Icons/gmail.png" className='icons' alt="Gmail" />
               <p>juraszwojtek03@gmail.com</p>
             </div>
           </div>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src="/Icons/LinkedIn_icon.svg.webp" className='icons' />
+              <img src="/Icons/LinkedIn_icon.svg.webp" className='icons' alt="LinkedIn" />
               <p>
                 <a 
                   href="https://www.linkedin.com/in/wojciech-jurasz/" 
@@ -56,26 +59,16 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          {/* <div className="contact-details">
-            <img src='/Icons/git.jpg' className='icons'></img>
-            <div className="contact-detail">
-              <p>https://github.com/wjurasz</p>
-            </div>
-          </div> */}
-          <div className="contact-details">
-            {/* <div className="contact-detail">
-              <p>Rzeszów, Poland</p>
-            </div> */}
-          </div>
         </div>
+
         <form onSubmit={onSubmit} className="contact-right">
           <div className="contact-right-info">Leave a message!</div>
-          <label htmlFor=''>Your Name</label>
-          <input type='text' placeholder='Enter Your name' name='name' />
-          <label htmlFor='Your Email'></label>
-          <input type='email' placeholder='Enter Your email' name='email' />
-          <label htmlFor=''>Write Your message here!</label>
-          <textarea name='message' rows='8' placeholder='Enter Your message'></textarea>
+          <label>Your Name</label>
+          <input type='text' placeholder='Enter Your name' name='name' required />
+          <label>Your Email</label>
+          <input type='email' placeholder='Enter Your email' name='email' required />
+          <label>Write Your message here!</label>
+          <textarea name='message' rows='8' placeholder='Enter Your message' required></textarea>
           <button type='submit' className="contact-submit">Submit</button>
         </form>
       </div>
@@ -83,4 +76,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

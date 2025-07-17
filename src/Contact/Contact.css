@@ -11,9 +11,8 @@
 }
 .contact-title h1{
     padding: 0px 30px;
-    /* background: linear-gradient(340deg, #00aeff 20%, #ffffff 80%); */
     background: linear-gradient(340deg, rgb(255, 145, 145) 20%, rgb(255, 50, 50) 80%); 
-     background-clip: text;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 80px;
@@ -27,19 +26,16 @@
 }
 .contact-section{
     display: flex;
-    gap: 150px ;
-
+    gap: 150px;
 }
 .contact-left{
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 .contact-left h1{
     font-size: 50px;
     font-weight: 700;
-    /* background: linear-gradient(220deg, #ffffff 10%,  #00aeff 90%); */
     background: linear-gradient(340deg, rgb(255, 145, 145) 20%, rgb(255, 50, 50) 80%); 
     background-clip: text;
     -webkit-background-clip: text;
@@ -62,11 +58,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
+}
 .icons{
     width: 50px;
-}
-
 }
 .contact-right{
     display: flex;
@@ -77,12 +71,10 @@
 .contact-right-info{
     font-size: 50px;
     font-weight: 700;
-    /* background: linear-gradient(220deg, #00aeff 10%, #ffffff 90%); */
     background: linear-gradient(340deg, rgb(255, 145, 145) 20%, rgb(255, 50, 50) 80%); 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 .contact-right label{
     color: #d8d8d8;
@@ -99,7 +91,6 @@
     color: #a0a0a0;
     font-family: Outfit;
     font-size: 20px;
-
 }
 .contact-right textarea{
     width: 650px;
@@ -115,7 +106,6 @@
     border: none;
     color: white;
     border-radius: 50px;
-    /* background: linear-gradient(267deg, #ff0080, #7928ca); */
     background: linear-gradient(340deg, rgb(240, 125, 125) 20%, rgb(255, 50, 50) 80%); 
     font-size: 22px;
     padding: 20px 60px;
@@ -123,24 +113,15 @@
     cursor: pointer;
     transition: 0.5s;
 }
-
 .contact-submit:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-
-.href{
-    color: white;
-    text-decoration: none;
-}
-
-
 .contact-link {
     color: white;
     text-decoration: none;
     word-break: break-word;
 }
-
 .contact-link:hover {
     text-decoration: underline;
     background: linear-gradient(340deg, rgb(255, 145, 145) 20%, rgb(255, 50, 50) 80%); 
@@ -148,8 +129,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 
 @media(max-width:768px){
     .contact{
@@ -182,7 +161,7 @@
     }
 
     .contact-detail{
-        gap: 20;
+        gap: 20px;
     }
 
     .contact-detail img{
